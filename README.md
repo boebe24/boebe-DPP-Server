@@ -14,7 +14,8 @@ Please read the [FA³ST documentation](https://faaast-service.readthedocs.io/en/
 
 ### `productsDPPs.json`
 
-This file contains the Digital Product Passport(s) (DPP(s)) for your product(s). To work with our boebe-dpp viewer project (TODO), each DPP should include the following submodels:
+This file contains the Digital Product Passport(s) (DPP(s)) for your product(s). To work with [our boebe-DPP-Viewer app](https://github.com/boebe24/boebe-DPP-Viewer)
+, each DPP should include the following submodels:
 
 | Submodel IdShort   | Template Source | Content |
 |---------------------|------------------|---------|
