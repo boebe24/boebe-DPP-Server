@@ -235,15 +235,32 @@ private static final String SERVICE_ENDPOINT_BT_SMARTPHONE = "https://www.boebe2
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <network-security-config>
+    <!-- is HTTP allowed or not-->
     <base-config cleartextTrafficPermitted="false">
         <trust-anchors>
+            <!-- Trust system certificates -->
             <certificates src="system"/>
+            <!-- Trust our self-signed certificates  -->
             <certificates src="@raw/mycertificates"/>
         </trust-anchors>
     </base-config>
 </network-security-config>
 ```
 
+### Explanation of network_security_config.xml
+
+The line `<certificates src="system"/>` imports existing certificates stored in the system of the smartphone as a **trust-anchor**.
+
+If you are hosting a FA³ST server:
+- You do not need each DPP-viewer app to include a pem file from you in their source code.
+- Instead, ensure your server has an SSL certificate recognized by Google.
+- The line `<certificates src="@raw/mycertificates"/>` is not necessary in this case.
+
+If you are a developer of a DPP-viewer Android app:
+- You can add the pem into the system certificates.
+- The `mycertificates.pem` file and relevant settings (`<certificates src="@raw/mycertificates"/>`) are not necessary.
+
+  
 3. Add the following to your `AndroidManifest.xml` file:
 
 ```xml
