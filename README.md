@@ -1,5 +1,11 @@
 # FA³ST Server Deployment Guide
 
+![Static Badge](https://img.shields.io/badge/Java_JDK-21-blue)
+
+![Static Badge](https://img.shields.io/badge/FA%C2%B3ST_Service_Starter-1.0.1-darkgreen?link=https%3A%2F%2Ffaaast-service.readthedocs.io%2Fen%2Flatest%2Findex.html)
+
+
+
 ## Introduction
 
 This project provides step-by-step guidance on deploying a FA³ST server on your VPS (Virtual Private Server) with a custom domain. The server can be used in conjunction with the FA³ST project client or our boebeapp.
