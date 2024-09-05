@@ -23,6 +23,17 @@ This file contains the Digital Product Passport(s) (DPP(s)) for your product(s).
 | CarbonFootprint     | [Carbon Footprint Template](https://github.com/admin-shell-io/submodel-templates/tree/main/published/Carbon%20Footprint) | Carbon footprint information |
 | Images              | N/A | Files, each containing a URL to an image |
 
+#### Important Notice: Sample Data
+
+> **Disclaimer:** The data contained in `productsDPPs.json` is provided solely as a sample to help users understand the usage and structure of the DPP (Digital Product Passport) format.
+> All of the 
+> - weight measurements
+> - Carbon footprint amounts
+> - Contact information
+> - Other product details
+>
+>  are **fictional** and do not correspond to any real-world products or entities. This sample data is intended for demonstration and educational purposes only.
+
 For more details on the Asset Administration Shell format, refer to the [Plattform Industrie 4.0 documentation](https://www.plattform-i40.de/IP/Redaktion/DE/Downloads/Publikation/Details_of_the_Asset_Administration_Shell_Part_2_V1.pdf?__blob=publicationFile&v=8).
 
 Recommended tools for editing AAS:
