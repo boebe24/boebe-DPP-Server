@@ -10,7 +10,7 @@
 
 This project provides step-by-step guidance on deploying a FA³ST server on your VPS (Virtual Private Server) with a custom domain. The server can be used in conjunction with the FA³ST project client or our boebeapp.
 
-Before starting, you'll need to:
+You'll need to:
 1. Purchase a domain
 2. Set up your keystore and truststore files with passwords
 
@@ -88,7 +88,7 @@ You should receive:
 
 Example: `123.456.789.123`
 
-> Note: Our team tested this project on a VPS with an Intel Xeon CPU, Ubuntu 22.04 x64, 1TB RAM, located in Frankfurt. AMD CPUs have not been tested.
+> Note: Our team tested this project on a VPS with an Intel Xeon CPU, Ubuntu 22.04 x64, 1TB RAM, located in Frankfurt. It works with Ubuntu 20.04 as well. AMD CPUs have not been tested.
 
 ### 2. Purchase a Domain
 
@@ -187,7 +187,7 @@ Example endpoints:
 - `https://www.boebe2024tech.top:443/api/v3.0/`
 - `https://www.boebe2024tech.top:473/api/v3.0/`
 
-Helpful Unix commands for managing ports and firewalls:
+Helpful Unix commands for managing ports and **firewalls**:
 ```bash
 # Firewall management
 sudo ufw enable
@@ -202,6 +202,9 @@ sudo lsof -i :443
 # Kill process by PID
 kill 21000
 ```
+
+> ** Important Reminder:** Some VPS (Virtual Private Server) providers have additional security settings. Apart from using `ufw` commands, you may need to open ports in their management console as well. Always check your provider's documentation for specific instructions.
+
 
 ### 9. Test SSL
 
