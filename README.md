@@ -125,6 +125,7 @@ Install Java 17+ on your VPS:
 For Ubuntu/Debian-based systems:
 ```bash
 apt update
+apt full-upgrade
 apt install openjdk-21-jdk
 ```
 
