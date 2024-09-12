@@ -142,6 +142,7 @@ else
 fi
 
 echo "You can use the following commands to manage the firewall and check the port status:"
+echo "sudo ufw enable"
 echo "sudo lsof -i :${PORT_NUMBER}"
 echo "sudo ufw status"
 echo "sudo ufw allow ${PORT_NUMBER}"
